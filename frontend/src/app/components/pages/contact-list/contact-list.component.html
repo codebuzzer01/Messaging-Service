@@ -1,0 +1,16 @@
+<h2> Welcome to Contacts-List</h2>
+
+<ul>
+    <ul *ngFor="let item of lists">
+        <a routerLink="/contacts/view/{{item.fName}}">
+           <div class="menu">
+             <ul>{{item.fName}}
+                {{item.lName}}</ul>
+           </div>
+
+            
+        </a>
+        
+
+    </ul>
+</ul>

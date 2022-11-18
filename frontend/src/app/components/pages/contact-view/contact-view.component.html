@@ -1,0 +1,13 @@
+
+<ul>
+    <ul *ngFor="let item of lists">
+        <div class="card w-75" id="info">
+            <div class="card-body">
+              <h3 class="card-title">{{item.fName}}-{{item.lName}}</h3>
+              <p class="card-text">Contact-me : {{item.phNo}}</p>
+              <a routerLink="/message/to/{{item.fName}}" class="btn btn-primary btn-sm" id="msg">Send Message</a>
+            </div>
+          </div>
+
+    </ul>
+</ul>

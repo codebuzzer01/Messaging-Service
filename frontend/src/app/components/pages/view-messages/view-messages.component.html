@@ -1,0 +1,15 @@
+<button class="btn btn-primary btn-lg" (click)="viewMessage()" *ngIf="!submitted" id="load">Load Messages</button>
+<ul *ngIf="submitted">
+    <ul *ngFor="let item of msgs">
+        <div class="card w-75" id="info">
+            <div class="card-body">
+              <h3 class="card-title">To: {{item.FName}}</h3>
+              <p class="card-text" id="content">Message : {{item.message}}</p>
+              <p class="card-text">On: {{item.date}}</p>
+
+              
+            </div>
+          </div>
+
+    </ul>
+</ul>

@@ -1,0 +1,66 @@
+header{
+    position: relative;
+    background: gray;
+    padding: 0;
+    border-bottom:5px solid black ;
+}
+
+a{
+    color: black;
+}
+
+
+.heading{
+    font-weight: bold;
+}
+
+a:hover{
+    background: black;
+    color: white;
+    cursor: pointer;
+}
+
+.container{
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+a.logo{
+    font-size: larger;
+    font-weight: bold;
+    padding: 1rem;
+    color: azure;
+    font-family: 'Times New Roman', Times, serif;
+}
+ul{
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+}
+
+ul a{
+    padding: 1rem;
+    display: inline-block;
+}
+
+.menu-container{
+    position: relative;
+}
+
+.menu{
+    position: absolute;
+    z-index: 1;
+    background: whitesmoke;
+    display: none;
+}
+
+.menu-container:hover .menu{
+    display: block;
+}
+
+.menu a{
+    width: 100%;
+    min-width: 8rem;
+}

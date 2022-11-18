@@ -1,0 +1,25 @@
+
+
+<ul *ngFor="let item of lists">
+    <div id="msg"  >
+        <h2>TO: {{item.fName}}-{{item.lName}}, {{item.phNo}}</h2>
+
+    </div>
+    <form class="content" >
+        <div class="form-group">
+            <label for="exampleFormControlTextarea1">Write your message here</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" [(ngModel)]="item.msg" [ngModelOptions]="{standalone: true}"></textarea>
+            
+          </div>
+          <a type="submit" routerLink="/In-Box" class="btn btn-primary btn-sm" id="sms" (click)="msgInfo(item)">SEND</a>
+          
+    </form>
+  
+
+  
+   
+</ul>
+
+
+
+

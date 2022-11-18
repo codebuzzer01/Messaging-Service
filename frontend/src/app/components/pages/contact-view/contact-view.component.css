@@ -1,0 +1,19 @@
+ul {
+    padding-bottom: 8px;
+    background-color: white;
+
+}
+.menu{
+    border-bottom: 2px solid black;
+}
+
+
+#info{
+    margin-top: 5px;
+    background: lightgrey;
+}
+
+#msg{
+    background-color: grey;
+    border: none;
+}
